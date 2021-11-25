@@ -9,28 +9,29 @@ ul {
   list-style: none;
 }
 
-.sprite-container {
-  width: 5%;
-  .sprite {
-    background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_\ \(1\).png")
-      no-repeat -10px -51px;
-    width: 96px;
-    height: 29px;
-  }
-}
-
 .nav-top {
   background: $nav-top-color;
   font-family: $main-font;
   display: flex;
   align-content: center;
-  width:100%;
+  width: 100%;
   white-space: nowrap;
+  min-width: 500px;
 
-
-  .sprite-container {
-    padding: 20px;
-    border: 1px solid transparent;
+  .left-container {
+    display: flex;
+    .sprite-container {
+      padding: 20px;
+      border: 1px solid transparent;
+      min-width: 40px;
+      width: 5%;
+      .sprite {
+        background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_\ \(1\).png")
+          no-repeat -10px -51px;
+        width: 96px;
+        height: 29px;
+      }
+    }
 
     &:hover {
       border: 1px solid white;
@@ -51,8 +52,10 @@ ul {
     flex-direction: column;
     align-content: center;
     padding-top: 15px;
+    padding-left: 50px;
     width: 5%;
     border: 1px solid transparent;
+    min-width: 5%;
 
     &:hover {
       border: 1px solid white;
@@ -73,7 +76,6 @@ ul {
   }
 
   .search-container {
-    padding-left: 35px;
     width: 65%;
 
     .search-box {
@@ -97,8 +99,7 @@ ul {
         background-color: #f3a847;
 
         &:hover {
-            background-color: #f09c2f;
-            ;
+          background-color: #f09c2f;
         }
       }
 
@@ -115,7 +116,7 @@ ul {
         border-right: 1px solid black;
 
         &:hover {
-            background-color: #a0a0a0;
+          background-color: #a0a0a0;
         }
       }
     }
@@ -204,7 +205,7 @@ ul {
 }
 
 .nav-bottom {
-//  width: 98.9%;
+  //  width: 98.9%;
   background-color: $nav-bottom-color;
   font-family: $main-font;
   font-weight: 400;

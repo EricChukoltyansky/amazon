@@ -16,13 +16,14 @@
   }
 
   .wig-container {
-      width: 35%;
+    width: 35%;
     .wig-image {
       background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
       background-position: center;
       background-size: 610px 700px;
       background-repeat: no-repeat;
       height: 80vh;
+      width: 100%
     }
   }
 }
@@ -35,7 +36,7 @@
 
 .information {
   padding-left: 52px;
-  padding-top: 16px;
+  padding-top: 10px;
   width: 29%;
   span {
     padding-left: 10px;
@@ -77,15 +78,41 @@
   }
 
   .price {
-      padding-top: 10px;
-      p {
-          font-size: 14px;
-        //   display: flex;
-      }
+    padding-top: 5px;
+    p {
+      font-size: 14px;
+      //   display: flex;
+      color: #565959;
+    }
+    strong {
+      color: black;
+    }
     span {
       font-size: 18px;
       font-weight: 400;
       color: #b12704;
     }
+  }
+  p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #565959;
+    line-height: 20px;
+    font-weight: 200;
+    strong {
+        color: black;
+        font-weight: 600;
+    }
+  }
+
+  .size {
+      padding-top: 7px;
+      p {
+          color: #0f1111
+      }
+      strong {
+          font-weight: 400;
+          color: #555555;
+      }
   }
 }
