@@ -16,14 +16,17 @@
   }
 
   .wig-container {
-    width: 35%;
+    width: 32%;
+    height: 80vh;
+
     .wig-image {
       background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
       background-position: center;
       background-size: 610px 700px;
+      background-size: 100%;
       background-repeat: no-repeat;
-      height: 80vh;
-      width: 100%
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -37,7 +40,7 @@
 .information {
   padding-left: 52px;
   padding-top: 10px;
-  width: 29%;
+  width: 28%;
   span {
     padding-left: 10px;
   }
@@ -100,19 +103,58 @@
     line-height: 20px;
     font-weight: 200;
     strong {
-        color: black;
-        font-weight: 600;
+      color: black;
+      font-weight: 600;
     }
   }
 
   .size {
-      padding-top: 7px;
-      p {
-          color: #0f1111
+    padding-top: 7px;
+    p {
+      color: #0f1111;
+    }
+    strong {
+      font-weight: 400;
+      color: #555555;
+    }
+  }
+
+  .instructions {
+    display: flex;
+    padding-top: 10px;
+    li {
+      padding-bottom: 10px;
+    }
+    .right-ul {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 200;
+      color: #0f1111;
+      padding-left: 10px;
+    }
+    .left-ul {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #0f1111;
+    }
+  }
+  .about {
+    padding-top: 10px;
+    header {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f1111;
+    }
+    ul {
+      padding-top: 10px;
+      font-size: 14px;
+      font-weight: lighter;
+      padding-left: 20px;
+      li {
+        list-style: disc;
+        padding-bottom: 3px;
       }
-      strong {
-          font-weight: 400;
-          color: #555555;
-      }
+    }
   }
 }

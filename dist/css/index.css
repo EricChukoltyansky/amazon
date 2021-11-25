@@ -194,14 +194,16 @@ ul {
     .images .img-container img {
       border: 1px solid black; }
   .images .wig-container {
-    width: 35%; }
+    width: 32%;
+    height: 80vh; }
     .images .wig-container .wig-image {
       background-image: url("/assets/img/71CWkHn03cS._AC_UX679_ (1).jpg");
       background-position: center;
       background-size: 610px 700px;
+      background-size: 100%;
       background-repeat: no-repeat;
-      height: 80vh;
-      width: 100%; }
+      height: 100%;
+      object-fit: cover; }
 
 .wig-stars {
   background: url("/assets/img/3-fm1Jbg4IHlyhq (1).png") no-repeat -84px -28px;
@@ -211,7 +213,7 @@ ul {
 .information {
   padding-left: 52px;
   padding-top: 10px;
-  width: 29%; }
+  width: 28%; }
   .information span {
     padding-left: 10px; }
   .information a {
@@ -267,6 +269,36 @@ ul {
     .information .size strong {
       font-weight: 400;
       color: #555555; }
+  .information .instructions {
+    display: flex;
+    padding-top: 10px; }
+    .information .instructions li {
+      padding-bottom: 10px; }
+    .information .instructions .right-ul {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 200;
+      color: #0f1111;
+      padding-left: 10px; }
+    .information .instructions .left-ul {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #0f1111; }
+  .information .about {
+    padding-top: 10px; }
+    .information .about header {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f1111; }
+    .information .about ul {
+      padding-top: 10px;
+      font-size: 14px;
+      font-weight: lighter;
+      padding-left: 20px; }
+      .information .about ul li {
+        list-style: disc;
+        padding-bottom: 3px; }
 
 * {
   padding: 0;
