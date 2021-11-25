@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.43.5"
+  },
+  "name": "amazon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

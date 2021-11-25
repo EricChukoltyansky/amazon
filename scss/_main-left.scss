@@ -1,0 +1,91 @@
+.images {
+  display: flex;
+  padding-left: 10%;
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 45px;
+    div {
+      padding-bottom: 5px;
+    }
+
+    img {
+      border: 1px solid black;
+    }
+  }
+
+  .wig-container {
+      width: 35%;
+    .wig-image {
+      background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
+      background-position: center;
+      background-size: 610px 700px;
+      background-repeat: no-repeat;
+      height: 80vh;
+    }
+  }
+}
+
+.wig-stars {
+  background: url("/assets/img/3-fm1Jbg4IHlyhq (1).png") no-repeat -84px -28px;
+  width: 80px;
+  height: 15px;
+}
+
+.information {
+  padding-left: 52px;
+  padding-top: 16px;
+  width: 29%;
+  span {
+    padding-left: 10px;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: red;
+    }
+    p {
+      padding-bottom: 6px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    hr {
+      padding-top: 20px;
+      color: #e7e7e7;
+    }
+  }
+
+  header {
+    font-size: 24px;
+    font-weight: 400;
+    color: #565959;
+  }
+  .ratings {
+    display: flex;
+    padding-bottom: 5px;
+    a {
+      padding-left: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      &:hover {
+        text-decoration: underline;
+        color: red;
+      }
+    }
+  }
+
+  .price {
+      padding-top: 10px;
+      p {
+          font-size: 14px;
+        //   display: flex;
+      }
+    span {
+      font-size: 18px;
+      font-weight: 400;
+      color: #b12704;
+    }
+  }
+}
