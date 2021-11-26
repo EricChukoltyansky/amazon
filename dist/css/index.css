@@ -146,7 +146,7 @@ ul {
           position: absolute;
           left: 19px;
           top: 0px;
-          color: red; }
+          color: #F07C17; }
         .nav-top .right-nav-container ul .last .cart {
           background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_ (1).png") no-repeat -218px -337px;
           width: 41px;
@@ -189,26 +189,29 @@ ul {
 .images {
   display: flex;
   padding-left: 10%; }
-  .images .img-container {
+  .images .img-wrapper {
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-top: 45px; }
-    .images .img-container div {
-      padding-bottom: 5px; }
-    .images .img-container img {
-      border: 1px solid black; }
-  .images .wig-container {
-    width: 35%;
-    height: 78vh; }
-    .images .wig-container .wig-image {
-      background-image: url("/assets/img/71CWkHn03cS._AC_UX679_ (1).jpg");
-      background-position: center;
-      background-size: 610px 700px;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 100%;
-      object-fit: cover; }
+    position: relative; }
+    .images .img-wrapper .img-container {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      padding-top: 45px; }
+      .images .img-wrapper .img-container div {
+        padding-bottom: 5px; }
+      .images .img-wrapper .img-container img {
+        border: 1px solid black; }
+    .images .img-wrapper .wig-container {
+      width: 90%;
+      height: 80vh; }
+      .images .img-wrapper .wig-container .wig-image {
+        background-image: url("/assets/img/71CWkHn03cS._AC_UX679_ (1).jpg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        object-fit: cover; }
 
 .wig-stars {
   background: url("/assets/img/3-fm1Jbg4IHlyhq (1).png") no-repeat -84px -28px;
@@ -515,18 +518,26 @@ ul {
   padding-left: 200px;
   padding-top: 40px;
   margin-right: 10%; }
-  .carousel-section .head header {
-    padding-top: 20px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #0f1111; }
-  .carousel-section .head p {
-    font-size: 11px;
-    color: #808080; }
-    .carousel-section .head p .fa-exclamation-circle {
-      padding-left: 3px; }
-    .carousel-section .head p:hover {
-      color: #292929; }
+  .carousel-section .head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; }
+    .carousel-section .head .pages p {
+      color: #0f1111;
+      font-size: 14px; }
+    .carousel-section .head header {
+      padding-top: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #0f1111; }
+    .carousel-section .head p {
+      font-size: 11px;
+      color: #808080; }
+      .carousel-section .head p .fa-exclamation-circle {
+        padding-left: 3px; }
+      .carousel-section .head p:hover {
+        color: #292929; }
   .carousel-section .carousel-container {
     height: 35vh;
     display: flex;

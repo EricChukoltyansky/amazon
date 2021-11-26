@@ -1,35 +1,39 @@
 .images {
   display: flex;
   padding-left: 10%;
-  .img-container {
+
+  .img-wrapper {
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-top: 45px;
-    div {
-      padding-bottom: 5px;
+    position: relative;
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+      padding-top: 45px;
+
+      div {
+        padding-bottom: 5px;
+      }
+
+      img {
+        border: 1px solid black;
+      }
     }
 
-    img {
-      border: 1px solid black;
-    }
-  }
+    .wig-container {
+      width: 90%;
+      height: 80vh;
 
-  .wig-container {
-    width: 35%;
-    height: 78vh;
+      .wig-image {
+        background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
+        background-position: center;
 
-    .wig-image {
-      background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
-      background-position: center;
-      background-size: 610px 700px;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 100%;
-      object-fit: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
-
-
-
