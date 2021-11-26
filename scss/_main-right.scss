@@ -1,6 +1,7 @@
 .commerce-container {
   width: 14%;
   height: 64vh;
+  margin-right: clamp(100px, 15vw, 200px);
 
   .buy {
     width: 100%;
@@ -9,10 +10,13 @@
     margin-top: 10px;
     border: 2px solid #e7e7e7;
     border-radius: 10px;
+    min-width: 200px;
+    
 
     .buy-internal-container {
       padding: 12px;
       width: 88%;
+      
       header {
         font-size: 18px;
         font-weight: 400;
@@ -117,6 +121,8 @@
     padding-top: 7px;
     text-align: center;
     padding-left: 80px;
+    width:80%;
+    min-width: 100px;
     .fa-facebook-square {
       color: #3664a2;
     }
@@ -184,4 +190,6 @@
       }
     }
   }
+
+  
 }
