@@ -556,7 +556,8 @@ ul {
             font-size: 14px;
             padding-left: 7px;
             line-height: 20px;
-            font-weight: 200; }
+            font-weight: 200;
+            max-height: 115px; }
         .carousel-section .carousel-container .carousel .carousel-img-container .img-stars-three {
           background: url("/assets/img/3-fm1Jbg4IHlyhq (1).png") no-repeat -293px -182px;
           width: 95px;
