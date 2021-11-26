@@ -2,6 +2,7 @@
   width: 80%;
   padding-left: 200px;
   padding-top: 40px;
+  margin-right: 10%;
   .head {
     header {
       padding-top: 20px;
@@ -24,6 +25,8 @@
   .carousel-container {
     height: 35vh;
     display: flex;
+    width:100%;
+    // border: 2px solid black;
 
     .btn-container {
       display: flex;
@@ -37,13 +40,16 @@
 
     .carousel {
       display: flex;
-    //   width: 80%;
+      width: 100%;
 
       .carousel-img-container {
-        width: 33%;
+        width: 100%;
         padding-left: 15px;
         padding-right: 5px;
-        // border: 2px solid black;
+        border: 2px solid black;
+        img {
+            width:100%
+        }
         a {
           text-decoration: none;
           &:hover {

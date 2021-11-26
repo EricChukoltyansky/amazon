@@ -15,21 +15,21 @@ ul {
   align-content: center;
   width: 100%;
   white-space: nowrap;
-  min-width: 500px; }
+  min-width: 700px; }
   .nav-top .left-container {
     display: flex; }
     .nav-top .left-container .sprite-container {
       padding: 20px;
       border: 1px solid transparent;
       min-width: 40px;
-      width: 5%; }
+      width: 45%; }
+      .nav-top .left-container .sprite-container:hover {
+        border: 1px solid white;
+        transition: 0.2s ease-in-out; }
       .nav-top .left-container .sprite-container .sprite {
         background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_ (1).png") no-repeat -10px -51px;
         width: 96px;
         height: 29px; }
-    .nav-top .left-container:hover {
-      border: 1px solid white;
-      transition: 0.2s ease-in-out; }
   .nav-top a {
     text-decoration: none; }
   .nav-top li {
@@ -39,10 +39,9 @@ ul {
     flex-direction: column;
     align-content: center;
     padding-top: 15px;
-    padding-left: 50px;
-    width: 5%;
-    border: 1px solid transparent;
-    min-width: 5%; }
+    margin-left: 20px;
+    width: 55%;
+    border: 1px solid transparent; }
     .nav-top .delivery-container:hover {
       border: 1px solid white;
       transition: 0.2s ease-in-out; }
@@ -102,13 +101,15 @@ ul {
     width: 20%;
     height: 100%;
     padding-top: 16px;
-    padding-left: 13px; }
+    padding-left: 13px;
+    min-width: 400px; }
     .nav-top .right-nav-container ul {
       display: flex;
       justify-content: space-between;
       color: white;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      min-width: 200px; }
       .nav-top .right-nav-container ul .flag-container {
         display: flex; }
         .nav-top .right-nav-container ul .flag-container i {
@@ -163,10 +164,12 @@ ul {
   .nav-bottom ul {
     display: flex;
     width: 100%;
+    min-width: 400px;
     padding-left: 20px;
     padding-right: 10px; }
     .nav-bottom ul li {
-      padding-right: 20px; }
+      padding-right: 20px;
+      min-width: 30px; }
 
 .orange-img {
   display: flex;
@@ -452,7 +455,8 @@ ul {
     width: 100%; }
   .buy-it-with .three-images {
     display: flex;
-    padding-top: 20px; }
+    padding-top: 20px;
+    width: 100%; }
     .buy-it-with .three-images div {
       padding-right: 15px; }
       .buy-it-with .three-images div p {
@@ -509,7 +513,8 @@ ul {
 .carousel-section {
   width: 80%;
   padding-left: 200px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-right: 10%; }
   .carousel-section .head header {
     padding-top: 20px;
     font-size: 24px;
@@ -524,7 +529,8 @@ ul {
       color: #292929; }
   .carousel-section .carousel-container {
     height: 35vh;
-    display: flex; }
+    display: flex;
+    width: 100%; }
     .carousel-section .carousel-container .btn-container {
       display: flex;
       align-items: center; }
@@ -533,11 +539,15 @@ ul {
         width: 40px;
         border-radius: 7px; }
     .carousel-section .carousel-container .carousel {
-      display: flex; }
+      display: flex;
+      width: 100%; }
       .carousel-section .carousel-container .carousel .carousel-img-container {
-        width: 33%;
+        width: 100%;
         padding-left: 15px;
-        padding-right: 5px; }
+        padding-right: 5px;
+        border: 2px solid black; }
+        .carousel-section .carousel-container .carousel .carousel-img-container img {
+          width: 100%; }
         .carousel-section .carousel-container .carousel .carousel-img-container a {
           text-decoration: none; }
           .carousel-section .carousel-container .carousel .carousel-img-container a:hover {
