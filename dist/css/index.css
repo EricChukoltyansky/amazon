@@ -94,8 +94,10 @@ ul {
       border: 0px solid #111d5e;
       border-radius: 10px 0 0 10px;
       outline: none;
-      font-size: 20px;
-      background: none; }
+      font-size: 16px;
+      background: none;
+      padding-left: 10px;
+      color: black; }
   .nav-top .right-nav-container {
     width: 20%;
     height: 100%;
@@ -503,6 +505,67 @@ ul {
       color: #2070cf;
       padding-bottom: 5px;
       padding-right: 5px; }
+
+.carousel-section {
+  width: 80%;
+  padding-left: 200px;
+  padding-top: 40px; }
+  .carousel-section .head header {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f1111; }
+  .carousel-section .head p {
+    font-size: 11px;
+    color: #808080; }
+    .carousel-section .head p .fa-exclamation-circle {
+      padding-left: 3px; }
+    .carousel-section .head p:hover {
+      color: #292929; }
+  .carousel-section .carousel-container {
+    height: 35vh;
+    display: flex; }
+    .carousel-section .carousel-container .btn-container {
+      display: flex;
+      align-items: center; }
+      .carousel-section .carousel-container .btn-container button {
+        height: 40px;
+        width: 40px;
+        border-radius: 7px; }
+    .carousel-section .carousel-container .carousel {
+      display: flex; }
+      .carousel-section .carousel-container .carousel .carousel-img-container {
+        width: 33%;
+        padding-left: 15px;
+        padding-right: 5px; }
+        .carousel-section .carousel-container .carousel .carousel-img-container a {
+          text-decoration: none; }
+          .carousel-section .carousel-container .carousel .carousel-img-container a:hover {
+            text-decoration: underline;
+            color: #c7511f; }
+          .carousel-section .carousel-container .carousel .carousel-img-container a p {
+            font-size: 14px;
+            padding-left: 7px;
+            line-height: 20px;
+            font-weight: 200; }
+        .carousel-section .carousel-container .carousel .carousel-img-container .img-stars {
+          background: url("/assets/img/3-fm1Jbg4IHlyhq (1).png") no-repeat -293px -182px;
+          width: 95px;
+          height: 18px;
+          margin-left: 5px; }
+        .carousel-section .carousel-container .carousel .carousel-img-container .prime {
+          display: flex;
+          padding-left: 5px;
+          padding-top: 3px; }
+          .carousel-section .carousel-container .carousel .carousel-img-container .prime span {
+            font-size: 18px;
+            font-weight: 400;
+            color: #b12704;
+            padding-right: 10px; }
+          .carousel-section .carousel-container .carousel .carousel-img-container .prime .prime-sticker {
+            background: url("/assets/img/E6vgqiIirWgGb3f (1).png") no-repeat -184px -182px;
+            width: 69px;
+            height: 16px; }
 
 * {
   padding: 0;
