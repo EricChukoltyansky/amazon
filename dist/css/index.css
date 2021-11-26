@@ -195,7 +195,7 @@ ul {
       border: 1px solid black; }
   .images .wig-container {
     width: 35%;
-    height: 75vh; }
+    height: 78vh; }
     .images .wig-container .wig-image {
       background-image: url("/assets/img/71CWkHn03cS._AC_UX679_ (1).jpg");
       background-position: center;
@@ -213,7 +213,7 @@ ul {
 .information {
   padding-left: 52px;
   padding-top: 10px;
-  width: 28%; }
+  width: 29%; }
   .information span {
     padding-left: 10px; }
   .information a {
@@ -394,11 +394,44 @@ ul {
     .commerce-container .share span {
       font-size: 14px; }
   .commerce-container .suggestion {
+    margin-top: 15px;
+    border: 1px solid black;
+    margin-left: 55px;
     width: 100%;
-    text-align: center;
-    padding-left: 50px;
-    padding-top: 40px;
-    border: 1px solid black; }
+    cursor: pointer; }
+    .commerce-container .suggestion .suggestion-container {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      width: 94%; }
+      .commerce-container .suggestion .suggestion-container img {
+        width: 40%;
+        height: 100%; }
+      .commerce-container .suggestion .suggestion-container .mullet-stars-container {
+        display: flex;
+        padding-top: 5px; }
+        .commerce-container .suggestion .suggestion-container .mullet-stars-container p {
+          font-size: 12px;
+          padding-left: 20px;
+          color: #737a85; }
+        .commerce-container .suggestion .suggestion-container .mullet-stars-container .wig-stars {
+          background: url("/assets/img/3-fm1Jbg4IHlyhq (1).png") no-repeat -84px -28px;
+          width: 80px;
+          height: 15px;
+          margin-left: 17px; }
+      .commerce-container .suggestion .suggestion-container .prime {
+        display: flex;
+        padding-left: 15px;
+        padding-top: 7px; }
+        .commerce-container .suggestion .suggestion-container .prime span {
+          font-size: 18px;
+          font-weight: 400;
+          color: #b12704;
+          padding-right: 10px; }
+        .commerce-container .suggestion .suggestion-container .prime .prime-sticker {
+          background: url("/assets/img/E6vgqiIirWgGb3f (1).png") no-repeat -184px -182px;
+          width: 69px;
+          height: 16px; }
 
 * {
   padding: 0;
