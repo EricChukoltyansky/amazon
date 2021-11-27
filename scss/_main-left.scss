@@ -7,8 +7,6 @@
     display: flex;
     position: relative;
 
-    
-
     .div1:hover {
       box-shadow: 0px 0px 2px 2px red;
     }
@@ -19,20 +17,18 @@
       box-shadow: 0px 0px 2px 2px red;
     }
 
-
     .div1::after {
       content: "";
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
+      // background-color: black;
       top: 0px;
       left: 75px;
-      background-image: url('/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg');
+      background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
       background-size: 100%;
       visibility: visible;
-      
-      
+      background-repeat: no-repeat;
     }
 
     .div1:hover::after {
@@ -40,14 +36,13 @@
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
+      // background-color: black;
       top: 0px;
       left: 75px;
-      background-image: url('/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg');
+      background-image: url("/assets/img/71CWkHn03cS._AC_UX679_\ \(1\).jpg");
       background-size: 100%;
-      transition-delay: 0s;
+      z-index: 1;
       visibility: visible;
-      
     }
 
     .div2::after {
@@ -55,11 +50,12 @@
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
+      // background-color: black;
       top: 0px;
       left: 75px;
-      background-image: url('/assets/img/715DsJdshmS._AC_UX679_.jpg');
+      background-image: url("/assets/img/715DsJdshmS._AC_UX679_.jpg");
       background-size: 100%;
+      background-repeat: no-repeat;
       visibility: hidden;
     }
 
@@ -68,10 +64,10 @@
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
+      // background-color: black;
       top: 0px;
       left: 75px;
-      background-image: url('/assets/img/715DsJdshmS._AC_UX679_.jpg');
+      background-image: url("/assets/img/715DsJdshmS._AC_UX679_.jpg");
       background-size: 100%;
       visibility: visible;
     }
@@ -81,11 +77,12 @@
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
+      // background-color: black;
       top: 0px;
       left: 75px;
-      background-image: url('/assets/img/71CxletOVXS._AC_UY741_.jpg');
+      background-image: url("/assets/img/71CxletOVXS._AC_UY741_.jpg");
       background-size: 100%;
+      background-repeat: no-repeat;
       visibility: hidden;
     }
 
@@ -94,14 +91,13 @@
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
+      // background-color: black;
       top: 0px;
       left: 75px;
-      background-image: url('/assets/img/71CxletOVXS._AC_UY741_.jpg');
+      background-image: url("/assets/img/71CxletOVXS._AC_UY741_.jpg");
       background-size: 100%;
       visibility: visible;
     }
-
 
     .img-container {
       display: flex;
@@ -132,7 +128,6 @@
         object-fit: cover;
         // border: 1px solid black;
         margin-left: 5px;
-      
       }
     }
   }

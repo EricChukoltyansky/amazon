@@ -181,7 +181,5 @@ let loadCards = () => {
 
 
 rightBtn.addEventListener("click", changeCards);
-
-
 leftBtn.addEventListener("click", loadCards);
 window.addEventListener("load", loadCards);

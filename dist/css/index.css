@@ -204,41 +204,39 @@ ul {
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
       top: 0px;
       left: 75px;
       background-image: url("/assets/img/71CWkHn03cS._AC_UX679_ (1).jpg");
       background-size: 100%;
-      visibility: visible; }
+      visibility: visible;
+      background-repeat: no-repeat; }
     .images .img-wrapper .div1:hover::after {
       content: "";
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
       top: 0px;
       left: 75px;
       background-image: url("/assets/img/71CWkHn03cS._AC_UX679_ (1).jpg");
       background-size: 100%;
-      transition-delay: 0s;
+      z-index: 1;
       visibility: visible; }
     .images .img-wrapper .div2::after {
       content: "";
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
       top: 0px;
       left: 75px;
       background-image: url("/assets/img/715DsJdshmS._AC_UX679_.jpg");
       background-size: 100%;
+      background-repeat: no-repeat;
       visibility: hidden; }
     .images .img-wrapper .div2:hover::after {
       content: "";
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
       top: 0px;
       left: 75px;
       background-image: url("/assets/img/715DsJdshmS._AC_UX679_.jpg");
@@ -249,18 +247,17 @@ ul {
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
       top: 0px;
       left: 75px;
       background-image: url("/assets/img/71CxletOVXS._AC_UY741_.jpg");
       background-size: 100%;
+      background-repeat: no-repeat;
       visibility: hidden; }
     .images .img-wrapper .div3:hover::after {
       content: "";
       position: absolute;
       width: 90%;
       height: 85vh;
-      background-color: black;
       top: 0px;
       left: 75px;
       background-image: url("/assets/img/71CxletOVXS._AC_UY741_.jpg");
