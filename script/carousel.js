@@ -136,8 +136,14 @@ let rightBtn = document.querySelector(".carousel-right-btn");
 let items = document.querySelectorAll(".carousel-img-container");
 let pageNumber = document.querySelector(".pages-number");
 
+let leftBtnM = document.querySelector(".carousel-left-btn-m");
+let rightBtnM = document.querySelector(".carousel-right-btn-m");
+let itemsM = document.querySelectorAll(".carousel-img-container-m");
+let pageNumberM = document.querySelector(".pages-number-m");
+let widthMatch = window.matchMedia("(max-width: 760px)");
+
 let changeCards = () => {
- pageNumber.textContent++;
+  pageNumber.textContent++;
   items.forEach((item, index) => {
     item.innerHTML = `<img
                     class="object-img"
@@ -157,8 +163,31 @@ let changeCards = () => {
   });
 };
 
+let changeCardsM = () => {
+  pageNumberM.textContent++;
+  itemsM.forEach((item, index) => {
+    item.innerHTML = `<img
+                     class="object-img"
+                     src="${cards[index + 8].img}"
+                     alt=""
+                   />
+                   <a href=""
+                     ><p class="object-content">
+                       ${cards[index + 8].content}
+                     </p></a
+                   >
+                   <div class="img-stars ${cards[index + 8].stars}"></div>
+                   <div class="prime">
+                     <span class="object-price">${cards[index + 8].price}</span>
+                     <div class="prime-sticker"></div>
+                   </div>`;
+  });
+};
+
 let loadCards = () => {
-    +pageNumber.textContent === 1 ? (pageNumber.textContent = 1) : pageNumber.textContent--;
+  +pageNumber.textContent === 1
+    ? (pageNumber.textContent = 1)
+    : pageNumber.textContent--;
   items.forEach((item, index) => {
     item.innerHTML = `<img
                   class="object-img"
@@ -178,8 +207,57 @@ let loadCards = () => {
   });
 };
 
+let loadCardsM = () => {
+  +pageNumberM.textContent === 1
+    ? (pageNumberM.textContent = 1)
+    : pageNumberM.textContent--;
+  itemsM.forEach((item, index) => {
+    item.innerHTML = `<img
+                class="object-img"
+                src="${cards[index].img}"
+                alt=""
+              />
+              <a href=""
+                ><p class="object-content">
+                  ${cards[index].content}
+                </p></a
+              >
+              <div class="img-stars ${cards[index].stars}"></div>
+              <div class="prime">
+                <span class="object-price">${cards[index].price}</span>
+                <div class="prime-sticker"></div>
+              </div>`;
+  });
+};
+
+if (widthMatch.matches) {
+  
+    +pageNumberM.textContent === 1
+      ? (pageNumberM.textContent = 1)
+      : pageNumberM.textContent--;
+    itemsM.forEach((item, index) => {
+      item.innerHTML = `<img
+                  class="object-img"
+                  src="${cards[index].img}"
+                  alt=""
+                />
+                <a href=""
+                  ><p class="object-content">
+                    ${cards[index].content}
+                  </p></a
+                >
+                <div class="img-stars ${cards[index].stars}"></div>
+                <div class="prime">
+                  <span class="object-price">${cards[index].price}</span>
+                  <div class="prime-sticker"></div>
+                </div>`;
+    });
+  };
 
 
 rightBtn.addEventListener("click", changeCards);
+rightBtnM.addEventListener("click", changeCardsM);
 leftBtn.addEventListener("click", loadCards);
+leftBtnM.addEventListener("click", loadCardsM);
 window.addEventListener("load", loadCards);
+widthMatch.addEventListener("load", loadCardsM);

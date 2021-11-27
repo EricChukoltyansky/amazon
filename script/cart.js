@@ -1,12 +1,12 @@
 let btnAdd = document.querySelector(".btn-function-cart-add");
 let btnDec = document.querySelector(".btn-function-cart-dec");
-let zero = document.querySelector(".zero");
+let zero = document.querySelectorAll(".zero");
 
 const increment = () => {
-  zero.textContent++;
+  zero[1].textContent++;
 };
 const decrement = () => {
-  +zero.textContent === 0 ? (zero.textContent = 0) : zero.textContent--;
+  +zero[1].textContent === 0 ? (zero[1].textContent = 0) : zero[1].textContent--;
 };
 
 btnAdd.addEventListener("click", increment);
