@@ -672,6 +672,62 @@ ul {
             width: 69px;
             height: 16px; }
 
+@media (min-width: 1025px) {
+  .mobile {
+    visibility: hidden; } }
+
+@media (min-width: 321px) and (max-width: 1023px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Alexa"; }
+  .mobile .nav-top-m {
+    background: #131921;
+    font-family: "Alexa";
+    display: flex;
+    align-content: center;
+    width: 100%;
+    white-space: nowrap;
+    min-width: 700px;
+    justify-content: space-between; }
+    .mobile .nav-top-m .left-container {
+      display: flex; }
+      .mobile .nav-top-m .left-container .fa-bars {
+        padding: 10px;
+        color: white; }
+      .mobile .nav-top-m .left-container .sprites-container {
+        padding: 10px;
+        border: 1px solid transparent;
+        min-width: 40px;
+        width: 45%; }
+        .mobile .nav-top-m .left-container .sprites-container .sprite {
+          background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_ (1).png") no-repeat -10px -51px;
+          width: 96px;
+          height: 29px; }
+    .mobile .nav-top-m .last {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      padding-top: 10px; }
+      .mobile .nav-top-m .last .fa-user {
+        color: white;
+        padding-right: 5px; }
+      .mobile .nav-top-m .last span {
+        font-size: 13px;
+        color: white; }
+      .mobile .nav-top-m .last .zero {
+        position: absolute;
+        left: 53px;
+        top: 10px;
+        color: #f07c17; }
+      .mobile .nav-top-m .last .cart {
+        background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_ (1).png") no-repeat -218px -337px;
+        width: 41px;
+        height: 28px; }
+  .nav-top,
+  .nav-bottom {
+    visibility: hidden; } }
+
 * {
   padding: 0;
   margin: 0; }

@@ -1,3 +1,85 @@
-@media (max-width: 760px) {
+@import "include-media";
 
+$breakpoints: (
+  phone: 210px,
+  tablet: 768px,
+  desktop: 1024px,
+) !default;
+
+@include media(">desktop") {
+  .mobile {
+    visibility: hidden;
+  }
+}
+
+@include media(">phone", "<desktop") {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: $main-font;
+  }
+  .mobile {
+    .nav-top-m {
+      background: $nav-top-color;
+      font-family: $main-font;
+      display: flex;
+      align-content: center;
+      width: 100%;
+      white-space: nowrap;
+      min-width: 700px;
+      justify-content: space-between;
+      .left-container {
+        display: flex;
+        .fa-bars {
+          padding: 10px;
+          color: white;
+        }
+        .sprites-container {
+          padding: 10px;
+          border: 1px solid transparent;
+          min-width: 40px;
+          width: 45%;
+          .sprite {
+            background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_\ \(1\).png")
+              no-repeat -10px -51px;
+            width: 96px;
+            height: 29px;
+          }
+        }
+      }
+      .last {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        padding-top: 10px;
+        .fa-user {
+            color: white;
+            padding-right: 5px;
+
+        }
+        span {
+          font-size: 13px;
+          color: white;
+        }
+        .zero {
+          position: absolute;
+          left: 53px;
+          top: 10px;
+          color: #f07c17;
+        }
+        .cart {
+          background: url("/assets/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_ (1).png")
+            no-repeat -218px -337px;
+          width: 41px;
+          height: 28px;
+          
+        }
+      }
+    }
+  }
+
+  .nav-top,
+  .nav-bottom {
+    visibility: hidden;
+  }
 }
