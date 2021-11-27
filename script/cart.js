@@ -12,3 +12,5 @@ const decrement = () => {
 btnAdd.addEventListener("click", increment);
 
 btnDec.addEventListener("click", decrement);
+
+console.log("hello")
