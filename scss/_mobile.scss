@@ -279,7 +279,7 @@ $breakpoints: (
       overflow-y: scroll;
       .head {
         display: flex;
-        // width: 100%;
+       
 
         justify-content: space-between;
         align-items: center;
@@ -311,7 +311,7 @@ $breakpoints: (
         height: 35vh;
         display: flex;
         width: 100%;
-        // border: 2px solid black;
+        
 
         .btn-container {
           display: flex;
@@ -325,16 +325,13 @@ $breakpoints: (
 
         .carousel {
           display: flex;
-          //   width: 100%;
+          
 
           .carousel-img-container-m {
-            // width: 100%;
+            
             padding-left: 15px;
             padding-right: 5px;
-            // border: 2px solid black;
-            img {
-              //   width: 100%;
-            }
+            
             a {
               text-decoration: none;
               &:hover {
@@ -343,7 +340,7 @@ $breakpoints: (
               }
               p {
                 font-size: 14px;
-                // color:#565959;
+                
                 padding-left: 7px;
                 line-height: 20px;
                 font-weight: 200;
